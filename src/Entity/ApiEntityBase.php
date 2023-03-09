@@ -177,13 +177,10 @@ abstract class ApiEntityBase
      * Sets automagically values in class
      * @param  string             $name
      * @param  mixed              $value
-     * @return ApiEntityInterface
      */
-    public function __set(string $name, $value): ApiEntityInterface
+    public function __set(string $name, $value): void
     {
         $this->{$name} = $value;
-
-        return $this;
     }
 
     /**
